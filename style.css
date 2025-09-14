@@ -1,0 +1,89 @@
+/* Body with vertical split gradient background */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #b29de0 50%, #e6b8e8 50%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Chat container */
+.chat-container {
+  position: relative;
+  width: 400px;
+  height: 200px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Input box style */
+input[type="text"] {
+  width: 250px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Send button style with gradient */
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(90deg, #ff7eb9, #5eadff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #5eadff, #ff7eb9);
+}
+
+/* Messages container stacked vertically on right side */
+ul {
+  position: absolute;
+  top: -120px;
+  right: 0;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Individual message bubbles */
+ul li {
+  padding: 8px 12px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  word-wrap: break-word;
+}
+
+/* Received messages (pink) */
+ul li.received {
+  background: #fbb1c4;
+  color: #333;
+}
+
+/* Sent messages (cyan) */
+ul li.sent {
+  background: #5eadff;
+  color: white;
+}
