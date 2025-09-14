@@ -55,3 +55,5 @@ The core focus is on delivering a **seamless chat experience** with **live messa
 5. The front-end UI dynamically updates in real-time without reloading the page.
 
 ##OUTPUT:
+
+<img width="1676" height="939" alt="Image" src="https://github.com/user-attachments/assets/b182481e-c5fd-470c-9dc2-2312753c5da9" />
